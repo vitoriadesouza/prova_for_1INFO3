@@ -5,13 +5,17 @@
     let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
     */
     //AQUI, USE FOR...OF!
-    
+
     //Entrada
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+    let vogais = [];
 
-
-    //Processamento
-
-
+    //Processamento 
+    for (item of lista) {
+        if (item.indexOf('A') !== 1 || item.indexOf('O') !== 1) {
+            vogais.push(item)
+        }
+    }
     //Saída
-
+    document.write(vogais.sort().join("<br>"))
 </script>
